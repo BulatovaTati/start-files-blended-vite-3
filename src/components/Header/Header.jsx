@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { FaFlagUsa } from 'react-icons/fa';
+import { routes } from '../../routes';
+const { home, country } = routes;
 
 import styles from './Header.module.css';
 
@@ -14,12 +16,12 @@ const Header = () => {
           <nav>
             <ul className={styles.nav}>
               <li>
-                <NavLink to="/" className={addActive}>
+                <NavLink to={home} className={addActive}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/country" className={addActive}>
+                <NavLink to={country} className={addActive}>
                   Countries
                 </NavLink>
               </li>
